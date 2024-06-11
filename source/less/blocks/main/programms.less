@@ -12,9 +12,22 @@
     background-color: #F2F2F2;
     margin: 0;
     padding: 31px 0 14px 0;
-    position: relative;
     margin-bottom: 19px;
     list-style: none;
+}
+
+.programms__item--slim {
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 21px;
+    background-size: 50px 53px;
+}
+
+.programms__item--back {
+    background-image: url("../img/cat-back.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+    background-size: 67px 50px;
 }
 
 .programms__title {
@@ -48,4 +61,28 @@
     text-decoration: none;
     margin-left: 21px;
     margin-right: 50px;
+    position: relative;
+}
+
+.programms__link::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    top: -21px;
+    left: 0;
+}
+
+.programms__link--slim-arrow {
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 101px 1px;
+
+}
+
+.programms__link--pro-arrow {
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 97px 1px;
 }
