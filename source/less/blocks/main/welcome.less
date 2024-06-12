@@ -1,10 +1,43 @@
 .welcome {
     padding: 0 0 20px;
     margin: 0;
-    background-image: url(../img/cat-eat.png), url(../img/rectangle.svg), url("../img/background-cat.jpg");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center top 167px, center top 0, center top 0;
-    background-size: 87%, 100%, 100%;
+}
+
+.welcome__wrapper {
+    padding-bottom: 135px;
+    position: relative;
+    margin-bottom: 2px;
+
+    &::after {
+        content: "";
+        width: 280px;
+        height: 270px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        background: url("../img/cat-eat.png") no-repeat 0 0;
+        z-index: 2;
+    }
+}
+
+.welcome__container {
+padding-bottom: 162px;
+background: #4b4a50 url("../img/background-cat.jpg") no-repeat bottom center;
+background-size: auto 100%;
+position: relative;
+z-index: 1;
+
+&::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../../img/rectangle.svg") repeat 0 0;
+    z-index: 0;
+}
 }
 
 .welcome__title {
@@ -18,25 +51,29 @@
     text-align: center;
     margin-bottom: 23px;
     padding-top: 26px;
+    position: relative;
+    z-index: 3;
 }
 
 .welcome__text {
     padding: 0;
-    margin: 0 0 299px -4px;
+    margin: 0;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
 
 .welcome__link {
     display: block;
     padding: 11px 64px 9px 63px;
-    margin: 0 auto;
+    margin: 0 20px;
     text-decoration: none;
-    width: 280px;
+    width: auto;
     min-height: 40px;
     border: none;
     box-sizing: border-box;

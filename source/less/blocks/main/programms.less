@@ -12,7 +12,7 @@
     background-color: #F2F2F2;
     margin: 0;
     padding: 31px 0 14px 0;
-    margin-bottom: 19px;
+    margin-bottom: 18px;
     list-style: none;
 }
 
@@ -40,49 +40,41 @@
 }
 
 .programms__description {
-    font-family: "Lato";
+    font-family: @lato;
     color: #444444;
-    margin: 0 20px 42px 20px;
+    max-width: 500px;
+    margin: 0 20px;
     padding: 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #d9d9d9;;
 }
 
 .programms__link {
+    margin: 0 20px;
+    padding: 20px 0  0;
     display: block;
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    width: 135px;
     min-height: 24px;
     color: #000000;
     text-decoration: none;
-    margin-left: 21px;
-    margin-right: 50px;
     position: relative;
 }
 
-.programms__link::before {
-    content: "";
-    position: absolute;
-    width: 240px;
-    height: 1px;
-    background-color: #d9d9d9;
-    top: -21px;
-    left: 0;
-}
-
-.programms__link--slim-arrow {
+.programms__slim-arrow {
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
-    background-position: 101px 1px;
+    background-position: 102px 21px;
 
 }
 
-.programms__link--pro-arrow {
+.programms__pro-arrow {
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
-    background-position: 97px 1px;
+    background-position: 98px 21px;
 }
