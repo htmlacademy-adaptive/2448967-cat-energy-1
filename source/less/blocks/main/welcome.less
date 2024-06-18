@@ -1,12 +1,30 @@
 .welcome {
     padding: 0 0 20px;
     margin: 0;
+
+    @media (min-width: @t) {
+        padding-bottom: 525px;
+        position: relative;
+
+        &::after {
+            content: "";         
+        width: 709px;
+        height: 609px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            background: url("../img/cat-eat-tablet.png") no-repeat 0 0;
+            z-index: 14;
+
+}
+}
 }
 
 .welcome__wrapper {
     padding-bottom: 135px;
     position: relative;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 
     &::after {
         content: "";
@@ -18,11 +36,20 @@
         transform: translate(-50%);
         background: url("../img/cat-eat.png") no-repeat 0 0;
         z-index: 2;
+
+        @media (min-width: @t) {
+            background: none;
+    }
+}
+
+    @media (min-width: @t) {
+        padding: 0;
+        margin: 0;
     }
 }
 
 .welcome__container {
-padding-bottom: 162px;
+padding-bottom: 161px;
 background: #4b4a50 url("../img/background-cat.jpg") no-repeat bottom center;
 background-size: auto 100%;
 position: relative;
@@ -37,6 +64,17 @@ z-index: 0;
     height: 100%;
     background: url("../img/rectangle.svg") repeat 0 0;
     z-index: 1;
+
+    @media (min-width: @t) {
+        background: none;
+        background-color: #ffffff;
+    }
+}
+
+@media (min-width: @t) {
+    padding: 0;
+    margin: 0;
+    background-image: none;
 }
 }
 
@@ -53,6 +91,19 @@ z-index: 0;
     padding-top: 26px;
     position: relative;
     z-index: 3;
+
+    @media (min-width: @t) {
+        padding: 0;
+        margin: 0;
+        color: #000000;
+        font-size: 60px;
+        line-height: 60px;
+        width: 450px;
+        padding-top: 65px;
+        margin-left: 119px;
+        text-align: start;
+        margin-bottom: 40px;
+    }
 }
 
 .welcome__text {
@@ -67,6 +118,15 @@ z-index: 0;
     position: relative;
     z-index: 3;
     margin-left: -3px;
+
+    @media (min-width: @t) {
+       color: #000000;
+       font-size: 20px;
+       line-height: 20px;
+       margin: 0 0 50px 120px;
+       text-align: start;
+       width: 300px;
+    }
 }
 
 .welcome__link {
@@ -85,4 +145,14 @@ z-index: 0;
     line-height: 20px;
     font-weight: 400;
     text-align: center;
+
+    @media (min-width: @t) {
+            margin: 0 120px;
+            width: 244px;
+            padding: 14px 20px;
+            font-size: 20px;
+            line-height: 26px;
+            position: relative;
+            z-index: 15;
+    }
 }

@@ -1,16 +1,30 @@
 .example {
     margin: 0;
-   padding: 26px 0 40px 0px;
+   padding: 25px 0 40px 0px;
     background-color: #eaeaea;
+
+    @media (min-width: @t) {
+        padding: 46px 0 0 0;
+        border-top: 1px solid #f2f2f2;
+        background-color: #ffffff;
+    }
 }
 
 .example__title {
-    margin: 0 20px 41px;
+    margin: 0 20px 40px;
     padding: 0;
     width: 200px;
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
+
+    @media (min-width: @t) {
+        font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 59px 30px;
+    width: 360px;
+    }
+
 }
 
 .example__text {
@@ -20,6 +34,26 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
+
+    @media (min-width: @t) {
+        font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0 30px;
+    width: 720px;
+}
+}
+
+.example__container {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @t) {
+        padding: 55px 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    }
 }
 
 .example__result {
@@ -28,7 +62,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 280px;
+    width: 330px;
+
+    @media (min-width: @t) {
+        width: 370px;
+    }
 }
 
 .example__cost {
@@ -40,16 +78,35 @@
     text-transform: uppercase;
     width: 188px;
     padding-top: 20px;
+
+    @media (min-width: @t) {
+        margin: 0 0 0 0;
+        font-size: 20px;
+        line-height: 30px;
+        width: 188px;
+    padding-top: 6px;
+    text-align: right;
+    }
 }
 
 .example__slider {
     margin: 0;
     padding: 0 20px;
+
+    @media (min-width: @t) {
+        padding: 0;
+    }
 }
 
 .slider {
     padding: 0;
     margin: 0 auto;
     width: 280px;
-    height: 256px;
+    min-height: 256px;
+
+    @media (min-width: @t) {
+        adding: 0;
+        width: 100%;
+        min-height: 612px;
+    }
 }

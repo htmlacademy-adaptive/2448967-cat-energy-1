@@ -1,6 +1,10 @@
 .how {
     margin: 0;
-    padding: 1px 20px 29px 20px;
+    padding: 1px 20px 30px 20px;
+
+    @media (min-width: @t) {
+        padding: 14px 20px 19px 20px;
+    }
 }
 
 .how__title {
@@ -10,12 +14,25 @@
     font-weight: 400;
     line-height: 40px;
     width: 230px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
+
+    @media (min-width: @t) {
+        font-size: 60px;
+        line-height: 60px;
+        width: 400px;
+        margin-left: 10px;
+    }
 }
 
 .how__list {
     margin: 0;
     padding: 0;
+
+    @media (min-width: @t) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px 123px;
+    }
 }
 
 .how__item {
@@ -27,31 +44,72 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 60px 60px;
+
+    @media (min-width: @t) {
+        width: 260px;
+        min-height: 280px;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    z-index: 1;
+
+    }
 }
 
 .how__description {
     margin: 0 5px 0 79px;
-    padding: 4px 0 0;
+    padding: 3px 0 0;
     color: #444444;
     font-family: @lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     margin-left: 79px;
+
+    @media (min-width: @t) {
+        width: 245px;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 143px;
+        margin-left: 10px;
+    }
 }
 
 .how__item--leaf {
     background-image: url("../img/leaf.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/leaf-tablet.svg"), url("../img/one.svg");
+        background-position: 10px 33px, 137px 33px;
+        background-size: 80px 80px, 27%;
+    }
 }
 
 .how__item--powder {
     background-image: url("../img/powder.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/powder-tablet.svg"), url("../img/tw0.svg");  
+        background-position: 10px 33px, 134px 33px;
+        background-size: 80px 80px, 43%;
+    }
 }
 
 .how__item--eat {
     background-image: url("../img/eat.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/eat-tablet.svg"), url("../img/three.svg");  
+        background-position: 10px 33px, 134px 33px;
+        background-size: 80px 80px, 43%;
+    }
 }
 
 .how__item--time {
     background-image: url("../img/time.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/time-tablet.svg"), url("../img/four.svg");
+        background-position: 10px 33px, 134px 33px;
+        background-size: 80px 80px, 47%;
+    }
 }

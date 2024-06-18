@@ -4,6 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (min-width: @t) {
+        padding: 61px 69px 62px;
+    }
 }
 
 .address__invitation {
@@ -14,6 +18,13 @@
     font-weight: 400;
     text-transform: uppercase;
     width: 136px;
+
+    @media (min-width: @t) {
+        font-size: 20px;
+        line-height: 26px;
+        width: 163px;
+        padding-top: 1px;
+    }
 }
 
 .address__site {
@@ -24,4 +35,11 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+
+    @media (min-width: @t) {
+        font-size: 16px;
+        line-height: 20px;
+        width: 157px;
+        text-align: right;
+    }
 }

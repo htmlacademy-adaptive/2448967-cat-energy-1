@@ -1,6 +1,11 @@
 .result {
-    padding: 20px 23px 0;
+    padding: 19px 23px 0;
     margin: 0 auto;
+
+    @media (min-width: @t) {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .result__list {
@@ -9,6 +14,12 @@
     width: 125px;
     min-height: 70px;
     text-align: center;
+
+    @media (min-width: @t) {
+        padding: 0;
+        margin: 0;
+        width: 165px;
+    }
 }
 
 .result__term {
@@ -21,6 +32,13 @@
     border: 1px solid #cdcdcd;
     border-radius: 4px;
     box-sizing: border-box;
+
+    @media (min-width: @t) {
+        padding: 15px 26px 19px;
+        font-size: 30px;
+        line-height: 37px;
+        width: 162px;
+    }
 }
 
 .result__description {
@@ -33,4 +51,12 @@
     width: 77px;
     color: #444444;
     background-color: #eaeaea;
+
+    @media (min-width: @t) {
+        font-size: 14px;
+        line-height: 14px;
+        background-color: #ffffff;
+        width: 135px;
+        margin: -10px 13px 0;
+    }
 }
