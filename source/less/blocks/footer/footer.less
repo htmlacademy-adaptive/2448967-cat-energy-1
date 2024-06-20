@@ -11,6 +11,10 @@
 .footer__container {
     margin: 0;
     padding: 0;
+
+    @media (min-width: @d) {
+        
+    }
 }
 
 .footer__address {
@@ -27,7 +31,7 @@
     position: relative;
 
     @media (min-width: @t) {
-        min-height: 397px;
+        min-height: 402px;
     }
 }
 
@@ -36,6 +40,10 @@
     height: 362px;
     position: relative;
     z-index: 10;
+
+    @media (min-width: @t) {
+        min-height: 397px;
+    }
 }
 
 
@@ -61,7 +69,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 29px 30px;
+    padding: 23px 30px;
     background-color:  #f2f2f2;
     }
 }
