@@ -1,0 +1,191 @@
+.how {
+    margin: 0;
+    padding: 1px 20px 30px 20px;
+
+    @media (min-width: @t) {
+        padding: 14px 20px 19px 20px;
+
+        @media (min-width: @d) {
+padding: 72px 100px 20px;
+        }
+    }
+}
+
+.how__title {
+    margin: 0 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 230px;
+    margin-bottom: 39px;
+
+    @media (min-width: @t) {
+        font-size: 60px;
+        line-height: 60px;
+        width: 400px;
+        margin-left: 10px;
+
+        @media (min-width: @d) {
+margin-left: 10px;
+margin-bottom: 38px;
+        }
+    }
+}
+
+.how__list {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @t) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px 123px;
+
+        @media (min-width: @d) {
+            gap: 75px;
+        }
+    }
+}
+
+.how__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    min-height: 60px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 60px 60px;
+
+    @media (min-width: @t) {
+        width: 260px;
+        min-height: 280px;
+    background-position: 10px 33px;
+        background-size: 80px 80px;
+        position: relative;
+
+        @media (min-width: @d) {
+width: 250px;
+margin: 0;
+        }
+    }
+}
+
+.how__description {
+    margin: 0 5px 0 79px;
+    padding: 3px 0 0;
+    color: #444444;
+    font-family: @lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 79px;
+
+    @media (min-width: @t) {
+        width: 245px;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 143px;
+        margin-left: 10px;
+        position: relative;
+        z-index: 1;
+
+        @media (min-width: @d) {
+width: 245px;
+margin-left: 10px;
+        }
+    }
+}
+
+.how__item--leaf {
+    background-image: url("../img/leaf.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/leaf-tablet.svg");
+
+        &::after {
+            content: "1";
+            position: absolute;
+            bottom: 7px;
+            right: 25px;
+            font-size: 280px;
+            line-height: 100%;
+            font-weight: 400;
+            color: #f2f2f2;
+
+            @media (min-width: @d) {
+right: 15px;
+            }
+        }
+    }
+}
+
+.how__item--powder {
+    background-image: url("../img/powder.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/powder-tablet.svg");  
+        
+        &::after {
+            content: "2";
+            position: absolute;
+            bottom: 7px;
+            right: 4px;
+            font-size: 280px;
+            line-height: 100%;
+            font-weight: 400;
+            color: #f2f2f2;
+
+            @media (min-width: @d) {
+                right: -5px;
+                            }
+        }
+    }
+}
+
+.how__item--eat {
+    background-image: url("../img/eat.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/eat-tablet.svg");  
+        
+        &::after {
+            content: "3";
+            position: absolute;
+            bottom: 7px;
+            right: 3px;
+            font-size: 280px;
+            line-height: 100%;
+            font-weight: 400;
+            color: #f2f2f2;
+
+            @media (min-width: @d) {
+                right: -8px;
+                            }
+        }
+    }
+}
+
+.how__item--time {
+    background-image: url("../img/time.svg");
+
+    @media (min-width: @t) {
+        background-image: url("../img/time-tablet.svg");
+        
+        &::after {
+            content: "4";
+            position: absolute;
+            bottom: 7px;
+            right: 0;
+            font-size: 280px;
+            line-height: 100%;
+            font-weight: 400;
+            color: #f2f2f2;
+
+            @media (min-width: @d) {
+                right: -9px;
+                            }
+        }
+    }
+}

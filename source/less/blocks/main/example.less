@@ -1,0 +1,161 @@
+.example {
+    margin: 0;
+   padding: 25px 0 40px 0px;
+    background-color: #eaeaea;
+
+    @media (min-width: @t) {
+        padding: 46px 0 0 0;
+        border-top: 1px solid #f2f2f2;
+        background-color: #ffffff;
+
+        @media (min-width: @d) {
+padding: 42px 40px 0;
+border-top: none;
+        }
+    }
+}
+
+.example__block {
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: @d) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
+
+.example__wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.example__title {
+    margin: 0 20px 40px;
+    padding: 0;
+    width: 200px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+
+    @media (min-width: @t) {
+        font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 59px 30px;
+    width: 360px;
+
+    @media (min-width: @d) {
+        margin: 0 0 146px 70px;
+                }
+    }
+
+}
+
+.example__text {
+    margin: 0 20px;
+    padding: 0;
+    font-family: @lato;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+
+    @media (min-width: @t) {
+        font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0 30px;
+    width: 720px;
+
+    @media (min-width: @d) {
+        margin: 0 0 14px 70px;
+        width: 433px;
+    }
+    }
+}
+
+
+.example__container {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @t) {
+        padding: 55px 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: @d) {
+       display: block;
+       width: 440px;
+       padding-bottom: 0;
+    }
+
+    }
+}
+
+.example__result {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 280px;
+
+    @media (min-width: @t) {
+        width: 370px;
+    }
+}
+
+.example__cost {
+    margin: 0 auto 18px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 188px;
+    padding-top: 20px;
+
+    @media (min-width: @t) {
+        margin: 0 0 0 0;
+        font-size: 20px;
+        line-height: 30px;
+        width: 188px;
+    padding-top: 6px;
+    text-align: right;
+
+    @media (min-width: @d) {
+        width: 370px;
+        text-align: start;
+        margin-left: 41px;
+    }
+    }
+    }
+
+
+.example__slider {
+    margin: 0;
+    padding: 0 20px;
+
+    @media (min-width: @t) {
+        padding: 0;
+    }
+}
+
+.slider {
+    padding: 0;
+    margin: 0 auto;
+    width: 280px;
+    min-height: 256px;
+
+    @media (min-width: @t) {
+        adding: 0;
+        width: 100%;
+        min-height: 612px;
+
+        @media (min-width: @d) {
+            width: 426px;
+            min-height: 317px;
+        }
+    }
+}
