@@ -9,8 +9,10 @@
         background-color: #ffffff;
 
         @media (min-width: @d) {
-padding: 42px 40px 0;
-border-top: none;
+            padding: 42px 0 70px;
+            border-top: none;
+            width: 1358px;
+            margin: 0 auto;
         }
     }
 }
@@ -115,8 +117,12 @@ border-top: none;
     text-transform: uppercase;
     width: 188px;
     padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 
     @media (min-width: @t) {
+        display: block;
         margin: 0 0 0 0;
         font-size: 20px;
         line-height: 30px;
@@ -125,11 +131,24 @@ border-top: none;
     text-align: right;
 
     @media (min-width: @d) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px;
         width: 370px;
         text-align: start;
         margin-left: 41px;
     }
     }
+    }
+
+    .example__expenses {
+        margin: 0;
+        padding: 0;
+    }
+
+    .example__price {
+        margin: 0;
+        padding: 0;
     }
 
 

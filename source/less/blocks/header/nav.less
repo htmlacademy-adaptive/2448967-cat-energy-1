@@ -1,6 +1,13 @@
 .nav {
   position: relative;
 
+  @media (min-width: @t) {
+    margin-right: 8px;
+
+  @media (min-width: @d) {
+    margin-right: 0;
+  }
+  }
 }
 
 .nav__toggle {
@@ -43,6 +50,10 @@
   margin: 0;
   list-style: none;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @t) {
+    border-top: none;
+  }
 }
 
 .nav--closed .nav__list {
@@ -98,6 +109,8 @@
       padding-top: 74px;
       padding-bottom: 30px;
       color: #ffffff;
+      position: relative;
+      z-index: 1;
     }
 }
 }

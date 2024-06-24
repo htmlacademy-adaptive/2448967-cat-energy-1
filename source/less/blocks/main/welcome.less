@@ -29,13 +29,16 @@
 
         @media (min-width: @d) {
             padding-bottom: 184px;
+        width: 1436px;
+        margin: 0 auto;
 
             &::before {
                 content: "";
-                background: #4b4a50 url("../img/background-cat-d.jpg") no-repeat 0 0;
-                left: 50%;
+                background: #4b4a50 url("../img/background-cat-d.jpg") no-repeat right 0 top 0;
+                left: unset;
+                right: 0;
                 top: -127px;
-        width: 100%;
+        width: 50%;
         min-height: 695px;
                 position: absolute;
                 z-index: 2;
@@ -69,7 +72,7 @@
                 background: url("../img/rectangle-d.svg") repeat 0 0;
                 left: 50%;
                transform: none;
-               width: 100%;
+               width: 50%;
                min-height: 695px;
                bottom: -290px;
             }
