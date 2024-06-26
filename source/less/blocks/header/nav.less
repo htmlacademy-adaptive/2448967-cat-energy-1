@@ -84,6 +84,32 @@
 
 .nav__item {}
 
+
+.nav__item--current {
+
+  @media (min-width: @t) {
+position: relative;
+
+  &::after {
+position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 9px;
+    width: 64px;
+    height: 2px;
+    background-color: #68b738;
+    border: none;
+
+    @media (min-width: @d) {
+      background-color: #ffffff;
+      bottom: -4px;
+      left: 10px;
+      width: 68px;
+    }
+  }
+}
+}
+
 .nav__link {
   font-family: @oswald;
   font-weight: 400;
@@ -113,3 +139,11 @@
     }
 }
 }
+
+.nav__link:hover {
+opacity: 0.6;
+}
+
+.nav__link:active {
+  opacity: 0.3;
+  }
