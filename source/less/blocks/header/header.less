@@ -18,31 +18,38 @@
     @media (min-width: @d) {
       padding-top: 56px;
       padding-bottom: 21px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        background-color: #4b4a50;
-        left: unset;
-        right: 0;
-        width: 50%;
-        bottom: 125px;
-        height: 422px;
-      }
-
-      &::after {
-        margin: 0;
-        content: "";
-        position: absolute;
-        background: url("../img/rectangle-d.svg") repeat right 0 top 0;
-        left: unset;
-        right: 0;
-        width: 50%;
-        bottom: 125px;
-        height: 422px;
-      }
     }
   }
+}
+
+.header--index {
+
+  @media (min-width: @d) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #4b4a50;
+      left: unset;
+      right: 0;
+      width: 50%;
+      bottom: 125px;
+      height: 422px;
+    }
+
+    &::after {
+      margin: 0;
+      content: "";
+      position: absolute;
+      background: url("../img/rectangle-d.svg") repeat right 0 top 0;
+      left: unset;
+      right: 0;
+      width: 50%;
+      bottom: 125px;
+      height: 422px;
+    }
+}
 }
 
 .header__container {
