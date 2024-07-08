@@ -1,21 +1,28 @@
 .card-inner {
+position: relative;
+}
 
+
+.card-inner__image {
+position: absolute;
+top: 20px;
+left: 20px;
 }
 
 .card-inner__title {
     color: #222222;
-    width: 90px;;
     font-size: 16px;
     line-height: 20px;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
-.card-inner__about {
+
+.card-inner__wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    width: 220px;
+    justify-content: space-between;
 }
 
 .card-inner__text {
@@ -24,7 +31,14 @@
     display: block;
     font-family: @lato;
     color: #444444;
-    width: 100px;;
     font-size: 12px;
     line-height: 16px;
+}
+
+.card-inner__text-component {
+    text-align: right;
+}
+
+.card-inner__button {
+   width: 100%;
 }
