@@ -7,7 +7,14 @@ position: relative;
 @media (min-width: @t) {
     width: 560px;
     height: 512px;
+
+    @media (min-width: @d) {
+        position: absolute;
+        left: calc(50% + 50px);
+        bottom: 84px;
+       }
 }
+
 }
 
 .slider__list {
@@ -108,7 +115,7 @@ padding: 5px;
 
     @media (min-width: @t) {
         height: 512px;
-        top: -238px;
+        top: -236px;
     }
 }
 
@@ -166,7 +173,7 @@ padding: 5px;
     &::after {
         content: "";
         position: absolute;
-        width: 7px;
+        width: 8px;
         height: 36px;
         background-color: #ffffff;
         border: none;
