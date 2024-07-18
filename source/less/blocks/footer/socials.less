@@ -1,14 +1,15 @@
 .socials {
-    margin: 0;
-    padding:  22px 0 0;
+    margin: 0 20px;
+    padding:  18px 0 0;
     border-bottom: 1px solid #e6e6e6;
     background-color:  #f2f2f2;
 
     @media (min-width: @t) {
+        margin: 0;
+        border-bottom: none;
         padding-top: 39px;
         width: 160px;
         margin-left: 73px;
-    
     }
 }
 
@@ -18,9 +19,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @media (min-width: @t) {
-    }
 }
 
 .socials__item {
@@ -28,10 +26,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;  
-    
-    @media (min-width: @t) {
-    
-    }
 }
 
 .socials__link {
@@ -43,8 +37,17 @@
     width: 51px;
     height: 17px;
     margin-bottom: 22px;
+color: #666666;
+}
 
-    @media (min-width: @t) {
-    
-    }
+.socials__link:hover {
+    color: #68b738;
+}
+
+.socials__link:focus {
+    color: #68b738;
+}
+
+.socials__link:active {
+    opacity: 0.3;
 }

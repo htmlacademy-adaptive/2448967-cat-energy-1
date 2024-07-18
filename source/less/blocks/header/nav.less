@@ -1,6 +1,13 @@
 .nav {
   position: relative;
 
+  @media (min-width: @t) {
+    margin-right: 8px;
+
+  @media (min-width: @d) {
+    margin-right: 0;
+  }
+  }
 }
 
 .nav__toggle {
@@ -43,6 +50,10 @@
   margin: 0;
   list-style: none;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @t) {
+    border-top: none;
+  }
 }
 
 .nav--closed .nav__list {
@@ -73,6 +84,46 @@
 
 .nav__item {}
 
+
+.nav__item--current {
+
+  @media (min-width: @t) {
+position: relative;
+
+  &::after {
+position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 9px;
+    width: calc(100% - 17px);
+    height: 2px;
+    background-color: #68b738;
+    border: none;
+
+    @media (min-width: @d) {
+      background-color: #ffffff;
+      bottom: -4px;
+      left: 10px;
+      width: calc(100% - 20px);
+    }
+  }
+}
+}
+
+.nav__item--current-form {
+
+  &::after {
+    bottom: 1px;
+    left: 8px;
+    width: calc(100% - 15px);
+
+    @media (min-width: @d) {
+  background-color: #68b738;
+  bottom: -6px;
+  }
+}
+}
+
 .nav__link {
   font-family: @oswald;
   font-weight: 400;
@@ -89,15 +140,31 @@
   @media (min-width: @t) {
     font-size: 18px;
     line-height: 24px;
-    padding: 39px 8px 11px;
+    padding: 9px 8px;
     border-bottom: none;
 
     @media (min-width: @d) {
       font-size: 20px;
       line-height: 20px;
-      padding-top: 74px;
-      padding-bottom: 30px;
       color: #ffffff;
+      position: relative;
+      z-index: 1;
+      padding: 19px 8px 9px;
     }
 }
 }
+
+.nav__link:hover {
+opacity: 0.6;
+}
+
+.nav__link:active {
+  opacity: 0.3;
+  }
+
+  .nav__link--form {
+
+    @media (min-width: @d) {
+      color: #000000;
+    }
+  }

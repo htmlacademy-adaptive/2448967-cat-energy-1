@@ -1,21 +1,18 @@
 .logo {
-    margin: 0;
-    padding: 35px 0 20px;
+    margin: 0 20px;
+    padding: 9px 0 0;
     border-bottom: 1px solid #e6e6e6;
-    background-color: #f2f2f2;
 
     @media (min-width: @t) {
     width: 130px;
+    border-bottom: none;
+    margin: 0;
     }
 }
 
 .logo__text {
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-
-    @media (min-width: @t) {
-    
-    }
 }
 
 .logo__image {
@@ -23,8 +20,13 @@
     padding: 0;
     display: flex;
     justify-content: center;
-
-    @media (min-width: @t) {
-    
-    }
+    color: #111111;
 }
+
+.logo__image:hover {
+    color: #3e3e3e;
+    }
+
+    .logo__image:active {
+        color: #6b6b6b;
+    }

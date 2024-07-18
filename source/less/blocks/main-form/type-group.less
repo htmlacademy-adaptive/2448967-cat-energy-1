@@ -1,0 +1,42 @@
+.type-group {
+    padding-top: 25px;
+    margin: 0;
+    padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @t) {
+    padding-bottom: 0;
+    border-bottom: none;
+
+    @media (min-width: @d) {
+        padding: 0;
+  }
+}
+}
+
+.type-group__list {
+    padding: 0;
+    margin: 0 21px;
+
+    @media (min-width: @t) {
+border: 1px solid #e7e7e7;
+border-radius: 5px;
+padding: 32px 41px 31px 41px;
+margin: 0 75px 0 70px;
+
+@media (min-width: @d) {
+    padding: 33px 249px 30px 42px;
+    margin: 0;
+    }
+}
+}
+
+.type-group__item:not(:last-child) {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 19px;
+
+    @media (min-width: @t) {
+        margin-bottom: 28px;
+    }
+}
