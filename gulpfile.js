@@ -17,14 +17,16 @@ import htmlmin from 'gulp-htmlmin';
 
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+  .pipe(plumber())
+  .pipe(less())
+  .pipe(postcss([
+  autoprefixer(),
+  csso()
+  ]))
+  .pipe(rename('style.min.css'))
+  .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+  .pipe(browser.stream());
+  }
 
 // HTML
 
@@ -106,7 +108,7 @@ const copy = (done) => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
