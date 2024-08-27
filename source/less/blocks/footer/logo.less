@@ -4,15 +4,20 @@
     border-bottom: 1px solid #e6e6e6;
 
     @media (min-width: @t) {
-    width: 130px;
-    border-bottom: none;
-    margin: 0;
+        width: 130px;
+        border-bottom: none;
+        margin: 0;
     }
 }
 
 .logo__text {
     margin: 0 20px;
     padding: 0;
+}
+
+.logo__text:focus {
+    outline: none;
+    color: red;
 }
 
 .logo__image {
@@ -24,9 +29,15 @@
 }
 
 .logo__image:hover {
-    color: #3e3e3e;
-    }
+    color:  #3e3e3e;
+}
 
-    .logo__image:active {
-        color: #6b6b6b;
-    }
+.logo__image:focus {
+    outline: none;
+    color: red;
+}
+
+
+.logo__image:active {
+    color: #6b6b6b;
+}
