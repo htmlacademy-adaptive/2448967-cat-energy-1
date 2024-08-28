@@ -1,24 +1,22 @@
-.radio-input {
-
-}
+.radio-input {}
 
 .radio-input__label {
-    color: #222222;
-font-family: @oswald;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    padding-left: 44px;
-    position: relative;
+  color: #222222;
+  font-family: @oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 44px;
+  position: relative;
 
-    @media (min-width: @t) {
-        font-size: 20px;
-        line-height: 22px;
-        padding-left: 45px;
-    }
+  @media (min-width: @t) {
+    font-size: 20px;
+    line-height: 22px;
+    padding-left: 45px;
+  }
 
-    &::before {
+  &::before {
     content: "";
     width: 28px;
     height: 28px;
@@ -32,15 +30,15 @@ font-family: @oswald;
     cursor: pointer;
 
     @media (min-width: @t) {
-        width: 38px;
-        height: 38px;
-        border-radius: 25px;
-        left: -15px;
-        top: -6px;
+      width: 38px;
+      height: 38px;
+      border-radius: 25px;
+      left: -15px;
+      top: -6px;
     }
-    }
+  }
 
-    &::after {
+  &::after {
     content: "";
     width: 14px;
     height: 14px;
@@ -52,23 +50,27 @@ font-family: @oswald;
     display: none;
 
     @media (min-width: @t) {
-        width: 18px;
-        height: 18px;
-        border-radius: 25px;
-        left: -4px;
-        top: 5px;
+      width: 18px;
+      height: 18px;
+      border-radius: 25px;
+      left: -4px;
+      top: 5px;
     }
-}
-}
-
-.radio-input__input:checked + .radio-input__label::after {
-    display: block;
+  }
 }
 
-.radio-input__input:hover + .radio-input__label::before {
-    border: 1px solid #bababa;
+.radio-input__input:checked+.radio-input__label::after {
+  display: block;
 }
 
-.radio-input__input:disabled + .radio-input__label {
-    opacity: 0.3;
+.radio-input__input:hover+.radio-input__label::before {
+  border: 1px solid #bababa;
+}
+
+.radio-input__input:disabled+.radio-input__label {
+  opacity: 0.3;
+}
+
+.radio-input__input:focus+.radio-input__label::before {
+  border: 1px solid #bababa;
 }

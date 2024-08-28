@@ -1,64 +1,66 @@
 .logo-academy {
-    margin: 0;
-    padding: 20px 0 20px;
-    background-color:  #f2f2f2;
+  margin: 0;
+  padding: 20px 0 20px;
+  background-color: #f2f2f2;
 
-    @media (min-width: @t) {
-        padding-top: 30px;
-        width: 200px;
-        padding-bottom: 30px;
-    }
+  @media (min-width: @t) {
+    padding-top: 30px;
+    width: 200px;
+    padding-bottom: 30px;
+  }
 }
 
 .logo-academy__link {
-    margin: 0 22px 0 20px;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: #666666;
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  margin: 0 22px 0 20px;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #666666;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-    @media (min-width: @t) {
-        margin: 0 0 0 0;    
-    }
+  @media (min-width: @t) {
+    margin: 0 0 0 0;
+  }
 }
 
 .logo-academy__text {
-    margin: 0;
-    padding: 0;
-    font-family: @lato;
-    font-size: 16px;
-    line-height: 20px;
-    width: 113px;
-    margin-top: 7px;
+  margin: 0;
+  padding: 0;
+  color: #666666;
+  font-family: @lato;
+  font-size: 16px;
+  line-height: 20px;
+  width: 113px;
+  margin-top: 7px;
+  fill: none;
 
-    @media (min-width: @t) {
-        width: 115px;
-        margin: 7px 0 0 36px;
+  @media (min-width: @t) {
+    width: 115px;
+    margin: 7px 0 0 36px;
 
-        @media (min-width: @d) {
-            margin: 7px 0 0 36px;        
-        }
+    @media (min-width: @d) {
+      margin: 7px 0 0 36px;
     }
+  }
 }
 
 .logo-academy__image {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.logo-academy__link:hover + .logo-academy__image {
-    color: #68b738;
+.logo-academy__link:hover {
+  color: #68b738;
 }
 
-.logo-academy__link:focus + .logo-academy__image {
-    color: #68b738;
-    outline: none;
+.logo-academy__link:focus {
+  outline: none;
+  color: #68b738;
 }
 
 .logo-academy__link:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
