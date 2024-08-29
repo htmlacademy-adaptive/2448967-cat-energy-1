@@ -1,226 +1,225 @@
 .welcome {
-    padding: 0 0 20px;
-    margin: 0;
+  padding: 0 0 20px;
+  margin: 0;
 
-    @media (min-width: @t) {
-        padding-bottom: 525px;
-        position: relative;
+  @media (min-width: @t) {
+    padding-bottom: 525px;
+    position: relative;
 
-        &::after {
-            content: "";
-            width: 709px;
-            height: 609px;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%);
-            background: url("../img/cat-eat-tablet.png") no-repeat 0 0;
-            z-index: 14;
+    &::after {
+      content: "";
+      width: 709px;
+      height: 609px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      background: image-set(url("../img/cat-eat-tablet.webp"), url("../img/cat-eat-tablet.webp")) no-repeat 0 0;
+      z-index: 14;
 
-            @media (min-width: @d) {
-                background: url("../img/cat-eat-d.png");
-                bottom: 53px;
-                left: calc(50% + 113px);
-                width: 552px;
-                height: 499px;
-                z-index: 4;
-            }
-        }
+      @media (min-width: @d) {
+        background: image-set(url("../img/cat-eat-d.webp"), url("../img/cat-eat-d.png"));
+        bottom: 53px;
+        left: calc(50% + 113px);
+        width: 552px;
+        height: 499px;
+        z-index: 4;
+      }
+    }
 
-        @media (min-width: @d) {
-            padding-bottom: 184px;
-        width: 1436px;
-        margin: 0 auto;
+    @media (min-width: @d) {
+      padding-bottom: 184px;
+      width: 1436px;
+      margin: 0 auto;
 
-            &::before {
-                content: "";
-                background: #4b4a50 url("../img/background-cat-d.jpg") no-repeat right 0 top 0;
-                left: 50%;
-                right: unset;
-                top: -127px;
+      &::before {
+        content: "";
+        background: #4b4a50 image-set(url("../img/background-cat-d.webp"), url("../img/background-cat-d.jpg")) no-repeat right 0 top 0;
+        left: 50%;
+        right: unset;
+        top: -127px;
         width: 49vw;
         min-height: 695px;
-                position: absolute;
-                z-index: 2;
-            }
+        position: absolute;
+        z-index: 2;
+      }
 
-        }
     }
+  }
 }
 
 
 .welcome__wrapper {
-    padding-bottom: 135px;
-    position: relative;
-    margin-bottom: 3px;
+  padding-bottom: 135px;
+  position: relative;
+  margin-bottom: 3px;
 
-    &::after {
-        content: "";
-        width: 280px;
-        height: 270px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-        background: url("../img/cat-eat.png") no-repeat 0 0;
-        z-index: 2;
-
-        @media (min-width: @t) {
-            background: none;
-
-            @media (min-width: @d) {
-                background: url(../img/rectangle-d.svg) repeat right 0 top 0;
-                left: 50%;
-                transform: none;
-                width: 49vw;
-                height: 100%;
-                min-height: 695px;
-                top: -127px;
-            }
-        }
-    }
+  &::after {
+    content: "";
+    width: 280px;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: image-set(url("../img/cat-eat.webp"), url("../img/cat-eat.png")) no-repeat 0 0;
+    z-index: 2;
 
     @media (min-width: @t) {
-        padding: 0;
-        margin: 0;
+      background: none;
 
-        @media (min-width: @d) {
-            position: relative;
-            z-index: 2;
-        }
+      @media (min-width: @d) {
+        background: url(../img/rectangle-d.svg) repeat right 0 top 0;
+        left: 50%;
+        transform: none;
+        width: 49vw;
+        height: 100%;
+        min-height: 695px;
+        top: -127px;
+      }
     }
+  }
+
+  @media (min-width: @t) {
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: @d) {
+      position: relative;
+      z-index: 2;
+    }
+  }
 }
 
 @media (min-width: @d) {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
 .welcome__container {
-    padding-bottom: 161px;
-    background: #4b4a50 url("../img/background-cat.jpg") no-repeat bottom center;
-    background-size: auto 100%;
-    position: relative;
-    z-index: 0;
+  padding-bottom: 161px;
+  background: #4b4a50 image-set(url("../img/background-cat.webp"), url("../img/background-cat.jpg")) no-repeat bottom center;
+  background-size: auto 100%;
+  position: relative;
+  z-index: 0;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../img/rectangle.svg") repeat 0 0;
-        z-index: 1;
-
-        @media (min-width: @t) {
-            background: none;
-            background-color: #ffffff;
-            padding: 0;
-            margin: 0;
-
-            @media (min-width: @d) {
-                position: relative;
-                z-index: 0;
-                background-color: none;
-            }
-
-    }
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/rectangle.svg") repeat 0 0;
+    z-index: 1;
 
     @media (min-width: @t) {
-        padding: 0;
-        margin: 0;
-        background: none;
+      background: none;
+      background-color: #ffffff;
+      padding: 0;
+      margin: 0;
 
+      @media (min-width: @d) {
+        position: relative;
+        z-index: 0;
+        background-color: none;
+      }
 
-        @media (min-width: @d) {
-            position: relative;
-            z-index: 0;
-            background-color: none;
-        }
     }
+  }
+
+  @media (min-width: @t) {
+    padding: 0;
+    margin: 0;
+    background: none;
+
+
+    @media (min-width: @d) {
+      position: relative;
+      z-index: 0;
+      background-color: none;
+    }
+  }
 }
 
 .welcome__title {
+  padding: 0;
+  margin: 0 auto;
+  width: 250px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 23px;
+  padding-top: 26px;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: @t) {
     padding: 0;
-    margin: 0 auto;
-    width: 250px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
-    margin-bottom: 23px;
-    padding-top: 26px;
-    position: relative;
-    z-index: 3;
+    margin: 0;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 450px;
+    padding-top: 65px;
+    margin-left: 119px;
+    text-align: start;
+    margin-bottom: 40px;
 
-    @media (min-width: @t) {
-        padding: 0;
-        margin: 0;
-        color: #000000;
-        font-size: 60px;
-        line-height: 60px;
-        width: 450px;
-        padding-top: 65px;
-        margin-left: 119px;
-        text-align: start;
-        margin-bottom: 40px;
-
-        @media (min-width: @d) {
-            margin: 0 0 40px 188px;
-            padding-top: 99px;
-            position: relative;
-            z-index: 1;
-        }
+    @media (min-width: @d) {
+      margin: 0 0 40px 188px;
+      padding-top: 99px;
+      position: relative;
+      z-index: 1;
     }
+  }
 }
 
 .welcome__text {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  margin-left: -3px;
+
+  @media (min-width: @t) {
+    color: #000000;
+    font-size: 20px;
     line-height: 20px;
-    text-align: center;
-    position: relative;
-    z-index: 3;
-    margin-left: -3px;
+    margin: 0 0 50px 120px;
+    text-align: start;
+    width: 300px;
 
-    @media (min-width: @t) {
-        color: #000000;
-        font-size: 20px;
-        line-height: 20px;
-        margin: 0 0 50px 120px;
-        text-align: start;
-        width: 300px;
-
-        @media (min-width: @d) {
-            margin: 0 0 52px 189px;
-            position: relative;
-            z-index: 1;
-        }
+    @media (min-width: @d) {
+      margin: 0 0 52px 189px;
+      position: relative;
+      z-index: 1;
     }
+  }
 }
 
 .welcome__link {
-    margin: 0 20px;
-    width: auto;
+  margin: 0 20px;
+  width: auto;
 
-    @media (min-width: @t) {
-        margin: 0 120px;
-        width: 244px;
-        position: relative;
-        z-index: 15;
+  @media (min-width: @t) {
+    margin: 0 120px;
+    width: 244px;
+    position: relative;
+    z-index: 15;
 
-        @media (min-width: @d) {
-            margin: 0 0 0 189px;
-            position: relative;
-            z-index: 1;
-        }
+    @media (min-width: @d) {
+      margin: 0 0 0 189px;
+      position: relative;
+      z-index: 1;
     }
+  }
 }
-
