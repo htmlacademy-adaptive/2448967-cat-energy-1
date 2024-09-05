@@ -6,6 +6,9 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16.png" type="image/png">
   <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32.png" type="image/png">
   <link rel="icon" sizes="152x152" href="./img/favicons/favicon-152.png" type="image/png">
@@ -23,7 +26,7 @@
         </picture>
       </a>
 
-      <nav class="nav nav--closed">
+      <nav class="nav">
 
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -52,7 +55,7 @@
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="catalog__list">
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="chicken-small.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/chicken-small-t.webp 1x, ./img/chicken-small-t@2x.webp 2x" width="200" height="210">
@@ -79,14 +82,14 @@
               <p class="catalog__text card-inner__text card-inner__text-component">700 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="chicken-big.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/chicken-big-t.webp 1x, ./img/chicken-big-t@2x.webp 2x" width="200" height="210">
-            <source type="image/webp" 
+            <source type="image/webp"
               srcset="./img/chicken-big.webp 1x, ./img/chicken-big@2x.webp 2x" width="140" height="107">
             <source media="(min-width: 768px)" srcset="./img/chicken-big-t.png 1x, ./img/chicken-big-t@2x.png 2x"
               width="200" height="210">
@@ -109,14 +112,14 @@
               <p class="catalog__text card-inner__text card-inner__text-component">1000 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="fish-small.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/fish-small-t.webp 1x, ./img/fish-small-t@2x.webp 2x" width="200" height="210">
-            <source type="image/webp" 
+            <source type="image/webp"
               srcset="./img/fish-small.webp 1x, ./img/fish-small@2x.webp 2x" width="140" height="107">
             <source media="(min-width: 768px)" srcset="./img/fish-small-t.png 1x, ./img/fish-small-t@2x.png 2x"
               width="200" height="210">
@@ -139,10 +142,10 @@
               <p class="catalog__text card-inner__text card-inner__text-component">700 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="fish-big.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/fish-big-t.webp 1x, ./img/fish-big-t@2x.webp 2x" width="200" height="210">
@@ -169,14 +172,14 @@
               <p class="catalog__text card-inner__text card-inner__text-component">1000 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="buckwheat-small.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/buckwheat-small-t.webp 1x, ./img/buckwheat-small-t@2x.webp 2x" width="200" height="210">
-            <source type="image/webp" 
+            <source type="image/webp"
               srcset="./img/buckwheat-small.webp 1x, ./img/buckwheat-small@2x.webp 2x" width="140" height="107">
             <source media="(min-width: 768px)"
               srcset="./img/buckwheat-small-t.png 1x, ./img/buckwheat-small-t@2x.png 2x" width="200" height="210">
@@ -199,10 +202,10 @@
               <p class="catalog__text card-inner__text card-inner__text-component">400 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="buckwheat-big.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/buckwheat-big-t.webp 1x, ./img/buckwheat-big-t@2x.webp 2x" width="200" height="210">
@@ -229,14 +232,14 @@
               <p class="catalog__text card-inner__text card-inner__text-component">700 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item card-inner">
-          <a class="catalog__product-link" href="#">
+          <a class="catalog__product-link" href="rice-small.html">
           <picture>
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/rice-small-t.webp 1x, ./img/rice-small-t@2x.webp 2x" width="200" height="210">
-            <source type="image/webp" 
+            <source type="image/webp"
               srcset="./img/rice-small.webp 1x, ./img/rice-small@2x.webp 2x" width="140" height="107">
             <source media="(min-width: 768px)" srcset="./img/rice-small-t.png 1x, ./img/rice-small-t@2x.png 2x"
               width="200" height="210">
@@ -259,7 +262,7 @@
               <p class="catalog__text card-inner__text card-inner__text-component">500 ₽</p>
             </div>
           </div>
-          <a class="card-inner__link button-inner" href="#">Заказать</a>
+          <a class="card-inner__link button-inner" href="order.html">Заказать</a>
         </li>
         <li class="catalog__item catalog__item--all card-inner">
           <h3 class="catalog__title-plus card-inner__title">Показать еще 100500 товаров</h3>
@@ -284,7 +287,7 @@
                 <p class="card-inner__text addition__text">200 ₽</p>
               </div>
             </div>
-            <a class="card-inner__link button-inner" href="#">Заказать</a>
+            <a class="card-inner__link-addition button-inner" href="order.html">Заказать</a>
           </li>
           <li class="addition__item card-inner">
             <div class="addition__container">
@@ -294,7 +297,7 @@
                 <p class="card-inner__text addition__text">50 ₽</p>
               </div>
             </div>
-            <a class="card-inner__link button-inner" href="#">Заказать</a>
+            <a class="card-inner__link-addition button-inner" href="order.html">Заказать</a>
           </li>
           <li class="addition__item card-inner">
             <div class="addition__container">
@@ -304,7 +307,7 @@
                 <p class="card-inner__text addition__text">100 ₽</p>
               </div>
             </div>
-            <a class="card-inner__link button-inner" href="#">Заказать</a>
+            <a class="card-inner__link-addition button-inner" href="order.html">Заказать</a>
           </li>
           <li class="addition__item card-inner">
             <div class="addition__container">
@@ -314,14 +317,16 @@
                 <p class="card-inner__text addition__text">300 ₽</p>
               </div>
             </div>
-            <a class="card-inner__link button-inner" href="#">Заказать</a>
+            <a class="card-inner__link-addition button-inner" href="order.html">Заказать</a>
           </li>
         </ul>
         <div class="addition__gift gift">
           <a class="gift__link" href="#">
             <div class="gift__container">
               <h2 class="visually-hidden">Подарок</h2>
+              <div class="gift__text-wrapper">
               <span class="gift__text">Закажите всё<br>и получите чехол для<br>кота в подарок!</span>
+            </div>
             </div>
           </a>
         </div>

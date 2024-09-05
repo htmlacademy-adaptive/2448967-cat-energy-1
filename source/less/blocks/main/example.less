@@ -5,7 +5,7 @@
 
 .example__content {
   margin: 0;
-  padding: 25px 0 40px 0;
+  padding: 25px 0 40px;
   background-color: #eaeaea;
 
   @media (min-width: @t) {
@@ -22,7 +22,6 @@
   }
 }
 
-
 .example__title-container {
   margin: 0;
   padding: 25px 0 39px;
@@ -38,11 +37,9 @@
       border-top: none;
       width: 1358px;
       margin: 0 auto;
-      background-color: transparent;;
     }
   }
 }
-
 
 .example__title {
   margin: 0 20px;
@@ -67,7 +64,6 @@
   }
 }
 
-
 .example__wrapper {
   padding: 0;
   margin: 0;
@@ -82,6 +78,8 @@
     @media (min-width: @d) {
       background-color: #eaeaea;
       padding-top: 70px;
+      position: relative;
+      padding-bottom: 72px;
     }
   }
 }
@@ -117,7 +115,6 @@
     }
   }
 }
-
 
 .example__container {
   margin: 0;
@@ -218,6 +215,9 @@
     @media (min-width: @d) {
       display: block;
       padding-bottom: 69px;
+      position: absolute;
+      top: -137px;
+      left: calc(50% + 50px);
     }
   }
 }
