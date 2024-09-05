@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.min.css">  
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="shortcut icon" href="./favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" sizes="16x16" href="./img/favicons/favicon-16.png" type="image/png">
   <link rel="icon" sizes="32x32" href="./img/favicons/favicon-32.png" type="image/png">
   <link rel="icon" sizes="152x152" href="./img/favicons/favicon-152.png" type="image/png">
@@ -23,7 +26,7 @@
         </picture>
       </a>
 
-      <nav class="nav nav--closed">
+      <nav class="nav">
 
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -54,21 +57,21 @@
       </div>
       <a class="welcome__link button-inner" href="#">Подобрать программу</a>
     </section>
-    <section class="programms">
-      <ul class="programms__list">
-        <li class="programms__item programms__item--slim">
-          <h2 class="programms__title">Похудение</h2>
-          <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+    <section class="programs">
+      <ul class="programs__list">
+        <li class="programs__item programs__item--slim">
+          <h2 class="programs__title">Похудение</h2>
+          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programms__link" href="#">Каталог slim</a>
+          <a class="programs__link" href="#">Каталог slim</a>
         </li>
-        <li class="programms__item programms__item--back">
-          <h2 class="programms__title">Набор массы</h2>
-          <p class="programms__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+        <li class="programs__item programs__item--back">
+          <h2 class="programs__title">Набор массы</h2>
+          <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programms__link" href="#">Каталог pro</a>
+          <a class="programs__link" href="#">Каталог pro</a>
         </li>
       </ul>
     </section>
@@ -122,8 +125,8 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="./img/before-t.webp 1x, ./img/before-t@2x.webp 2x" width="560" height="512">
-                  <source type="image/webp" srcset="./img/before.webp 1x, ./img/before@2x.webp 2x"
-                    alt="фото толстого кота" class="slider__image" alt="Локация на карте" width="280" height="256">
+                  <source type="image/webp" srcset="./img/before.webp 1x, ./img/before@2x.webp 2x" class="slider__image"
+                    width="280" height="256">
                   <source media="(min-width: 768px)" srcset="./img/before-t.png 1x, ./img/before-t@2x.png 2x"
                     width="560" height="512">
                   <img src="./img/before.png" srcset="./img/before@2x.png 2x" alt="фото толстого кота"
@@ -134,8 +137,8 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="./img/after-t.webp 1x, ./img/after-t@2x.webp 2x" width="560" height="512">
-                  <source type="image/webp" srcset="./img/after.webp 1x, ./img/after@2x.webp 2x"
-                    alt="фото толстого кота" class="slider__image" alt="Локация на карте" width="280" height="256">
+                  <source type="image/webp" srcset="./img/after.webp 1x, ./img/after@2x.webp 2x" class="slider__image"
+                    width="280" height="256">
                   <source media="(min-width: 768px)" srcset="./img/after-t.png 1x, ./img/after-t@2x.png 2x" width="560"
                     height="512">
                   <img src="./img/after.png" srcset="./img/after@2x.png 2x" alt="фото худого кота" class="slider__image"
@@ -173,8 +176,7 @@
               <source type="image/webp" media="(min-width: 768px)" class="footer__img-location"
                 srcset="./img/location-tablet.webp 1x, ./img/location-tablet@2x.webp 2x" width="768" height="400">
               <source type="image/webp" class="footer__img-location"
-                srcset="./img/location.webp 1x, ./img/location@2x.webp 2x" width="320" height="362"
-                alt="Локация на карте">
+                srcset="./img/location.webp 1x, ./img/location@2x.webp 2x" width="320" height="362">
               <source media="(min-width: 1440px)" class="footer__img-location"
                 srcset="./img/location-desktop.jpg 1x, ./img/location-desktop@2x.jpg 2x" width="1440" height="400">
               <source media="(min-width: 768px)" class="footer__img-location"
@@ -236,5 +238,4 @@
   </main>
   <script src="./js/script.js"></script>
 </body>
-
 </html>

@@ -4,8 +4,6 @@
 
   @media (min-width: @t) {
     gap: 13px;
-
-    @media (min-width: @d) {}
   }
 }
 
@@ -60,6 +58,6 @@
   border: 2px solid #ff8282;
 }
 
-.text-input__input:invalid:not(:placeholder-shown)+.contacts-group__icon {
+.text-input__input:invalid:not(:placeholder-shown) + .contacts-group__icon {
   stroke: #ff8282;
 }

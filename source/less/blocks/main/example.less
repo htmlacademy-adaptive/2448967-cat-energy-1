@@ -5,7 +5,7 @@
 
 .example__content {
   margin: 0;
-  padding: 25px 0 40px 0px;
+  padding: 25px 0 40px;
   background-color: #eaeaea;
 
   @media (min-width: @t) {
@@ -22,9 +22,7 @@
   }
 }
 
-
 .example__title-container {
-  padding: 0;
   margin: 0;
   padding: 25px 0 39px;
   background-color: #eaeaea;
@@ -42,7 +40,6 @@
     }
   }
 }
-
 
 .example__title {
   margin: 0 20px;
@@ -65,9 +62,7 @@
       padding-right: 560px;
     }
   }
-
 }
-
 
 .example__wrapper {
   padding: 0;
@@ -83,6 +78,8 @@
     @media (min-width: @d) {
       background-color: #eaeaea;
       padding-top: 70px;
+      position: relative;
+      padding-bottom: 72px;
     }
   }
 }
@@ -119,7 +116,6 @@
   }
 }
 
-
 .example__container {
   margin: 0;
   padding: 0;
@@ -136,7 +132,6 @@
       padding-bottom: 0;
       padding-left: 0;
     }
-
   }
 }
 
@@ -196,11 +191,7 @@
   padding: 0;
 }
 
-
-
-
 .example__slider-box {
-
   @media (min-width: @t) {
     padding-bottom: 100px;
     background-color: #eaeaea;
@@ -224,6 +215,9 @@
     @media (min-width: @d) {
       display: block;
       padding-bottom: 69px;
+      position: absolute;
+      top: -137px;
+      left: calc(50% + 50px);
     }
   }
 }
